@@ -1,0 +1,403 @@
+html {
+        height: 100%;
+    }
+
+    body {
+	  font-family: 'Raleway', sans-serif;
+	  background: #F9F8F8;
+	  display: flex;
+	}
+
+	header.header {
+	  position: absolute;
+	  top: 50%;
+	  left: 0;
+	  width: 100%;
+	  -webkit-transform: translateY(-50%);
+			  transform: translateY(-50%);
+	}
+	header.header h1 {
+	  font-size: 8rem;
+	  color: #222222;
+	  text-align: center;
+	  margin-top: 0;
+	  text-transform: uppercase;
+	  font-weight: 900;
+	}
+
+	.glitch-window {
+	  position: absolute;
+	  top: 0;
+	  left: -2px;
+	  width: 100%;
+	  color: #222222;
+	  text-shadow: 2px 0 #F9F8F8, -1px 0 yellow, -2px 0 green;
+	  overflow: hidden;
+	  animation: crt-me 2500ms infinite linear alternate-reverse;
+	}
+
+    .main {
+        position: relative;
+    }
+
+    .dragon {
+        width: 200px;
+        height: 140px;
+        transform-origin: 50% 80%;
+        animation: zoomIn .5s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate;
+    }
+
+    .dragon .body {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 180px;
+        height: 128px;
+        background: url(./img/body.png) no-repeat center center;
+        background-size: contain;
+        z-index: 10;
+    }
+
+    .dragon .horn-left {
+        position: absolute;
+        top: -17px;
+        left: 32px;
+        width: 31px;
+        height: 31px;
+        background: url(./img/horn-left.png) no-repeat;
+        background-size: contain;
+        z-index: 9;
+        transform-origin: 150% 200%;
+        transform: rotate(-5deg);
+        animation: swingRight .5s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate;
+    }
+
+    .dragon .horn-right {
+        position: absolute;
+        top: -16px;
+        left: 110px;
+        width: 34px;
+        height: 31px;
+        background: url(./img/horn-right.png) no-repeat;
+        background-size: contain;
+        z-index: 9;
+        transform-origin: -50% 200%;
+        transform: rotate(5deg);
+        animation: swingLeft .5s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate;
+    }
+
+    .dragon .eye {
+        position: absolute;
+        top: 39px;
+        width: 11px;
+        height: 11px;
+        background: url(./img/eye.png) no-repeat;
+        background-size: contain;
+        z-index: 12;
+    }
+
+    .dragon .eye.left {
+        left: 49px;
+    }
+
+    .dragon .eye.right {
+        left: 118px;
+        transform-origin: 50% 50%;
+        transform: rotate(180deg);
+    }
+
+    .dragon .blush {
+        position: absolute;
+        top: 46px;
+        width: 15px;
+        height: 9px;
+        background: url(./img/blush.png) no-repeat;
+        background-size: 100% 100%;
+        z-index: 11;
+        animation: blush .5s ease infinite alternate;
+    }
+
+    .dragon .blush.left {
+        left: 43px;
+    }
+
+    .dragon .blush.right {
+        left: 120px;
+    }
+
+    .dragon .mouth {
+        position: absolute;
+        top: 52px;
+        left: 49px;
+        width: 78px;
+        height: 56px;
+        background: url(./img/mouth.png) no-repeat;
+        background-size: 100%;
+        z-index: 11;
+        animation: openMouth 1s ease infinite;
+    }
+
+    .dragon .tail-sting {
+        position: absolute;
+        top: 67px;
+        left: 139px;
+        width: 40px;
+        height: 38px;
+        background: url(./img/tail-sting.png) no-repeat;
+        background-size: contain;
+        z-index: 9;
+        transform-origin: 0 100%;
+        animation: tailUp .5s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate;
+    }
+
+    .shadow-wrapper {
+        position: absolute;
+        top: 110px;
+        width: 100%;
+    }
+
+    .shadow {
+        margin: 0 auto;
+        width: 110px;
+        height: 30px;
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+        z-index: 0;
+        animation: zoomIn .5s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate;
+    }
+
+    .fire-wrapper {
+        position: absolute;
+        width: 40px;
+        top: 60px;
+        left: 88px;
+        transform: translate(-50%, -50%);
+        transform-origin: 50% 100%;
+        animation: fireUp 1s ease-in infinite;
+    }
+
+    .fire {
+        padding-bottom: 135%;
+        width: 100%;
+        height: 100%;
+        background: url(./img/fire.png) no-repeat;
+        background-size: contain;
+        animation: fire 1s ease-out infinite;
+    }
+
+    .progress {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .progress .outer {
+        width: 100%;
+        height: 14px;
+        border-radius: 7px;
+        background: rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .progress .inner {
+        width: 0;
+        height: 100%;
+        background: #ffcd33;
+        animation: loading 2s linear infinite;
+    }
+
+    @keyframes zoomIn {
+        100% {
+            transform: scale(1.16, 1.16);
+        }
+    }
+
+    @keyframes swingRight {
+        100% {
+            transform: rotate(5deg);
+        }
+    }
+
+    @keyframes swingLeft {
+        100% {
+            transform: rotate(-5deg);
+        }
+    }
+
+    @keyframes blush {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes openMouth {
+        0% {
+            -webkit-clip-path: ellipse(20% 0% at 50% 0);
+                    clip-path: ellipse(20% 0% at 50% 0);
+        }
+
+        50% {
+            -webkit-clip-path: ellipse(100% 100% at 50% 0);
+                    clip-path: ellipse(100% 100% at 50% 0);
+        }
+
+        70% {
+            -webkit-clip-path: ellipse(100% 100% at 50% 0);
+                    clip-path: ellipse(100% 100% at 50% 0);
+        }
+
+        100% {
+            -webkit-clip-path: ellipse(20% 0% at 50% 0);
+                    clip-path: ellipse(20% 0% at 50% 0);
+        }
+    }
+
+    @keyframes tailUp {
+        0% {
+            transform: scaleY(0.9);
+        }
+
+        100% {
+            transform: scaleY(1.06);
+        }
+    }
+
+    @keyframes loading {
+        100% {
+            width: 100%;
+        }
+    }
+
+    @keyframes fireUp {
+        0% {
+            top: 70px;
+        }
+
+        20% {
+            top: 70px;
+        }
+
+        100% {
+            top: -80px;
+        }
+    }
+
+    @keyframes fire {
+        0% {
+            transform: scale(0, 0);
+            opacity: 0.8;
+        }
+
+        20% {
+            transform: scale(0, 0);
+            opacity: 0.8;
+        }
+
+        50% {
+            opacity: 0.8;
+        }
+
+        100% {
+            transform: scale(1, 1);
+            opacity: 0;
+        }
+    }
+	
+	@-webkit-keyframes crt-me {
+	  0% {
+		clip: rect(31px, 9999px, 94px, 0);
+	  }
+	  10% {
+		clip: rect(112px, 9999px, 76px, 0);
+	  }
+	  20% {
+		clip: rect(85px, 9999px, 77px, 0);
+	  }
+	  30% {
+		clip: rect(27px, 9999px, 97px, 0);
+	  }
+	  40% {
+		clip: rect(64px, 9999px, 98px, 0);
+	  }
+	  50% {
+		clip: rect(61px, 9999px, 85px, 0);
+	  }
+	  60% {
+		clip: rect(99px, 9999px, 114px, 0);
+	  }
+	  70% {
+		clip: rect(34px, 9999px, 115px, 0);
+	  }
+	  80% {
+		clip: rect(98px, 9999px, 129px, 0);
+	  }
+	  90% {
+		clip: rect(43px, 9999px, 96px, 0);
+	  }
+	  100% {
+		clip: rect(82px, 9999px, 64px, 0);
+	  }
+	}
+
+	@keyframes crt-me {
+	  0% {
+		clip: rect(31px, 9999px, 94px, 0);
+	  }
+	  10% {
+		clip: rect(112px, 9999px, 76px, 0);
+	  }
+	  20% {
+		clip: rect(85px, 9999px, 77px, 0);
+	  }
+	  30% {
+		clip: rect(27px, 9999px, 97px, 0);
+	  }
+	  40% {
+		clip: rect(64px, 9999px, 98px, 0);
+	  }
+	  50% {
+		clip: rect(61px, 9999px, 85px, 0);
+	  }
+	  60% {
+		clip: rect(99px, 9999px, 114px, 0);
+	  }
+	  70% {
+		clip: rect(34px, 9999px, 115px, 0);
+	  }
+	  80% {
+		clip: rect(98px, 9999px, 129px, 0);
+	  }
+	  90% {
+		clip: rect(43px, 9999px, 96px, 0);
+	  }
+	  100% {
+		clip: rect(82px, 9999px, 64px, 0);
+	  }
+	}
+	.inspiration-button {
+	  font-family: Helvetica, sans-serif;
+	  position: fixed;
+	  display: inline-block;
+	  z-index: 100;
+	  bottom: 1rem;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, 0%);
+			  transform: translate(-50%, 0%);
+	  color: white;
+	  text-decoration: none;
+	  padding: 0.75rem 1rem;
+	  border-radius: 80px;
+	  background: -webkit-gradient(linear, right top, left top, from(#1e80dc), to(#c61590));
+	  background: linear-gradient(270deg, #1e80dc, #c61590);
+	  -webkit-transition: -webkit-transform 250ms ease;
+	  transition: -webkit-transform 250ms ease;
+	  transition: transform 250ms ease;
+	  transition: transform 250ms ease, -webkit-transform 250ms ease;
+	}
+	.inspiration-button:hover, .inspiration-button:focus, .inspiration-button:active {
+	  -webkit-transform: translate(-50%, -10%);
+			  transform: translate(-50%, -10%);
+	}
