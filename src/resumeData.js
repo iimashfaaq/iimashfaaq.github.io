@@ -1,7 +1,7 @@
 let resumeData = {
-    "imagebaseurl":"https://rbhatia46.github.io/",
-    "name": "Rahul Bhatia",
-    "role": "Frontend Developer and Data Scientist",
+    "imagebaseurl":"https://iimashfaaq.github.io/",
+    "name": "Ashfaaq IIM",
+    "role": "CS Student | Autodidact",
     "linkedinId":"Your LinkedIn Id",
     "skypeid": "Your skypeid",
     "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
@@ -15,40 +15,21 @@ let resumeData = {
           "name":"github",
           "url":"http://github.com/rbhatia46",
           "className":"fa fa-github"
-        },
-        {
-          "name":"skype",
-          "url":"http://twitter.com/rbhatia46",
-          "className":"fa fa-twitter"
         }
       ],
     "aboutme":"I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
     "address":"India",
-    "website":"https://rbhatia46.github.io",
+    "website":"https://iimashfaaq.github.io",
     "education":[
       {
-        "UniversityName":"The LNM Insitute of Information Technology",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Aug",
-        "YearOfPassing":"2020",
-        "Achievements":"Some Achievements"
-      },
-      {
-        "UniversityName":"Some University",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Jan",
-        "YearOfPassing":"2018",
-        "Achievements":"Some Achievements"
+        "UniversityName":"PSG College of Technology",
+        "specialization":"MSc Software Systems",
+        "MonthOfPassing":"May",
+        "YearOfPassing":"2022",
+        "Achievements":"CGPA: 8.3"
       }
     ],
     "work":[
-      {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
-      },
       {
         "CompanyName":"Some Company",
         "specialization":"Some specialization",

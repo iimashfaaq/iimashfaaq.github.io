@@ -789,9 +789,13 @@ call-to-action .button {
 
 #contact {
    background: #191919;
-   padding-top: 96px;
-   padding-bottom: 102px;
-   color: #636363;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   color: #F06000;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 #contact .section-head { margin-bottom: 42px; }
 
@@ -817,10 +821,17 @@ call-to-action .button {
    color: #ebeeee;
 }
 
+#contact h2 {
+   color: #fff;
+}
+
 #contact h4 {
    font: 16px/24px 'opensans-bold', sans-serif;
    color: #EBEEEE;
    margin-bottom: 6px;
+}
+#contact p.text {
+   columns: #FFFFFF;
 }
 #contact p.lead {
    font: 18px/36px 'opensans-light', sans-serif;
@@ -828,6 +839,30 @@ call-to-action .button {
 }
 #contact .header-col { padding-top: 6px; }
 
+.side-content {
+   flex: 0 0 16.6%;
+}
+
+.main-content {
+   flex: 0 0 66.6%;
+   margin-top: 2rem;
+   margin-bottom: 3rem;
+   color: #F06000;
+}
+
+.side-content-sm {
+   flex: 0 0 10%;
+}
+
+.main-content-lg {
+   flex: 0 0 80%;
+   margin-top: 2rem;
+}   
+
+.content-body {
+   line-height: 1.5;
+   color: rgba(0,0,0,.75);
+}
 
 /* contact form */
 #contact form { margin-bottom: 30px; }
@@ -842,23 +877,23 @@ call-to-action .button {
 #contact input,
 #contact textarea,
 #contact select {
-   padding: 18px 20px;
+   padding: 14px 15px;
 	color: #eee;
 	background: #373233;
-	margin-bottom: 42px;
+	margin-bottom: 20px;
 	border: 0;
 	outline: none;
    font-size: 15px;
    line-height: 24px;
-   width: 65%;
+   width: 100%;
 }
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
 	color: #fff;
-	background-color: #11ABB0;
+	background-color: #F06000;
 }
-#contact button.submit {
+#contact button {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color:#fff;
@@ -868,7 +903,6 @@ call-to-action .button {
    height: auto;
    display: inline-block;
 	border-radius: 3px;
-   margin-left: 26%;
 }
 #contact button.submit:hover {
 	color: #0D0D0D;
@@ -926,7 +960,7 @@ call-to-action .button {
 
 footer {
    padding-top: 48px;
-   margin-bottom: 48px;
+   margin-bottom: 20px;
    color: #303030;
    font-size: 14px;
    text-align: center;
