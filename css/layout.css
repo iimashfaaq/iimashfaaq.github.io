@@ -324,6 +324,23 @@ ul#nav li.current a { color: #F06000; }
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
+.c {
+   width: 85%;
+   -moz-animation: illustrator 2s ease;
+   -webkit-animation: illustrator 2s ease;
+}
+
+.java {
+   width: 65%;
+   -moz-animation: illustrator 2s ease;
+   -webkit-animation: illustrator 2s ease;
+}
+
+.reactjs {
+   width: 70%;
+   -moz-animation: illustrator 2s ease;
+   -webkit-animation: illustrator 2s ease;
+}
 
 .photoshop {
   	width: 60%;
@@ -331,7 +348,7 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: photoshop 2s ease;
 }
 .illustrator {
-  	width: 55%;
+  	width: 5%;
   	-moz-animation: illustrator 2s ease;
   	-webkit-animation: illustrator 2s ease;
 }
