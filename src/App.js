@@ -8,13 +8,7 @@ import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import resumeData from './resumeData';
 
-function initializeReactGA() {
- 	ReactGA.initialize('UA-146779656-1');
-	ReactGA.pageview('/homepage');
-}
-
 class App extends Component {
-	  initializeReactGA();
 	  render() {
 			return (
 				  <div className="App">
