@@ -4,20 +4,20 @@ let resumeData = {
     "role": "CS Student | Autodidact",
     "linkedinId":"Your LinkedIn Id",
     "skypeid": "Your skypeid",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+    "roleDescription": "I have chosen an industry where I can help improve the world for our future generation and make ours a little bit more fun. Fluent with programming languages such as C++, C#, Python, ReactJs and Java. Comfortable with web development.",
     "socialLinks":[
         {
           "name":"linkedin",
-          "url":"https://www.linkedin.com/in/rahul-bhatia-67ba08121/",
+          "url":"https://www.linkedin.com/in/ashfaaq-i-i-m-b40a60136/",
           "className":"fa fa-linkedin"
         },
         {
           "name":"github",
-          "url":"http://github.com/rbhatia46",
+          "url":"http://github.com/iimashfaaq",
           "className":"fa fa-github"
         }
       ],
-    "aboutme":"I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
+    "aboutme":"I am currently a 3rd year student at PSG College of Technology and pursuing my Masters in Software systems. I am a self taught Software Developer. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
     "address":"India",
     "website":"https://iimashfaaq.github.io",
     "education":[
@@ -29,22 +29,21 @@ let resumeData = {
         "Achievements":"CGPA: 8.3"
       }
     ],
-    "work":[
-      {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
-      }
-    ],
-    "skillsDescription":"Your skills here",
+    // "work":[
+    //   {
+    //     "CompanyName":"Some Company",
+    //     "specialization":"Some specialization",
+    //     "MonthOfLeaving":"Jan",
+    //     "YearOfLeaving":"2018",
+    //     "Achievements":"Some Achievements"
+    //   }
+    "skillsDescription":"",
     "skills":[
       {
-        "skillname":"HTML5"
+        "skillname":"Java"
       },
       {
-        "skillname":"CSS"
+        "skillname":"C"
       },
       {
         "skillname":"Reactjs"
