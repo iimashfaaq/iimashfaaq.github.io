@@ -20,8 +20,8 @@ export default class ContactUs extends Component {
 						<form onSubmit={this.submitForm} method="POST" action="https://formspree.io/mjvoyegg">
 							<input type="email" name="email" placeholder="Your email" required />
 							<textarea name="message" placeholder="Your message" required></textarea>
-							{status === "SUCCESS" ? <p class="text">Thanks!</p> : <button>Submit</button>}
-        					{status === "ERROR" && <p class="text">Ooops! There was an error.</p>}
+							{status === "SUCCESS" ? <p style={{ color: "white" }} >Thanks!</p> : <button>Submit</button>}
+        					{status === "ERROR" && <p style={{ color: "white" }} >Ooops! There was an error.</p>}
 						</form>
 					</div>
 				</div>
