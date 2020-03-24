@@ -16,15 +16,19 @@ export default  class Resume extends Component {
                 resumeData.education && resumeData.education.map((item)=>{
                   return(
                     <div className="row item">
-                       <div className="twelve columns">
-                          <h3>{item.UniversityName}</h3>
-                          <p className="info">
-                          {item.specialization}
-                          <span>&bull;</span> <em className="date">{item.MonthOfPassing} {item.YearOfPassing}</em></p>
-                          <p>
-                          {item.Achievements}
-                          </p>
-                       </div>
+                      <div className="twelve columns">
+                        <h3>{item.UniversityName}</h3>
+                        <p className="info">
+                        {item.specialization}
+                        <span>&bull;</span> <em className="date">{item.MonthOfPassing} {item.YearOfPassing}</em></p>
+                        <p>
+                        {item.Description}
+                        </p>
+                        {/* <p>
+                        {item.Achievements}
+                        </p> */}
+                        <a href="http://psgtech.edu/placements/regs/MSc%20Software%20Engineering/M.Sc(SS)-2015-Regulations.pdf">| Course |</a>
+                      </div>
                     </div>
                   )
                 })
