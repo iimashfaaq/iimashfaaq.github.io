@@ -18,7 +18,7 @@ let resumeData = {
     ],
   "aboutme":"I am currently a 3rd year student at PSG College of Technology and pursuing my Masters in Software systems. I have chosen an industry where I can help improve the world for our future generation and make ours a little bit more fun. Fluent with programming languages such as C++, C#, Python, ReactJs and Java. Comfortable with web development.",
   "address":"India",
-  "website":"https://iimashfaaq.github.io",
+  "website":"https://iimashfaaq.github.io/iimashfaaq",
   "education":[
     {
       "UniversityName":"PSG College of Technology",

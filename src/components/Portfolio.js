@@ -30,7 +30,7 @@ export default class Porfolio extends Component {
                       <div class="project-content">
                         <h3>WannaFry</h3>
                         <p>WannaFry is a Ransomware developed in Python with an intention to understand the 2016 WannaCry Ransomware attack. This Ransomware encrypts the target machine entirely with a randomly created key, logged, until a simulated ransom is paid. This uses PyCrypto module to encrypt files.</p>
-                        <a href="https://github.com/iimashfaaq/" target="_blank">View Source</a>
+                        <a href="https://github.com/iimashfaaq/WannaFry" target="_blank">View Source</a>
                       </div>
                     </div>
                       
