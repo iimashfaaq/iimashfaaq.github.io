@@ -12,7 +12,7 @@ import resumeData from './resumeData';
 
 function initializeReactGA() {
     ReactGA.initialize('UA-159216199-2');
-    ReactGA.pageview('/');
+    ReactGA.pageview('/homepage');
 }
 
 class App extends Component {
